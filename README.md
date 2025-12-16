@@ -4,22 +4,22 @@
   </a>
 </p>
 
-# Cold Esthetic – Backend API
+# Expertos Lipólisis – Backend API
 
-Backend API desarrollado en **Laravel 12** para la gestión de datos y contenidos de la clínica estética **Cold Esthetic**.  
-El sistema permite administrar información visual (imágenes tipo _Before & After_) y datos de formularios de contacto, asegurando un manejo correcto del almacenamiento, seguridad y consistencia de los registros.
+API Backend desarrollada en **Laravel 12** para la gestión integral de datos y contenidos de la clínica estética **Expertos Lipólisis**.  
+El sistema permite administrar información visual (imágenes tipo _Before & After_) y datos provenientes de formularios de contacto, garantizando un almacenamiento seguro, consistente y preparado para análisis estadísticos.
 
 ---
 
 ## 📌 Descripción del proyecto
 
-Este backend proporciona una **API REST** que centraliza la administración de:
+Este backend ofrece una **API REST** que centraliza la administración de:
 
 -   Contenidos visuales de la clínica (Before & After).
--   Formularios de contacto donde los usuarios ingresan sus datos personales, seleccionan un servicio de interés y envían mensajes opcionales.
--   Registro y análisis de leads para estadísticas y seguimiento comercial.
+-   Formularios de contacto con datos personales, servicio de interés y mensajes opcionales.
+-   Registro y análisis de leads para métricas y seguimiento comercial.
 
-El sistema está orientado a un uso administrativo y público controlado, integrándose fácilmente con aplicaciones frontend web o móviles.
+El sistema está diseñado para un uso administrativo con acceso público controlado, integrándose de forma sencilla con aplicaciones frontend web o móviles.
 
 ---
 
@@ -33,7 +33,7 @@ El sistema está orientado a un uso administrativo y público controlado, integr
 -   Laravel Sanctum (autenticación)
 -   Laravel Storage (gestión de archivos)
 -   UUID
--   Faker (generación de datos de prueba con factories y seeders)
+-   Faker (factories y seeders para datos de prueba)
 
 ---
 
@@ -56,15 +56,16 @@ El sistema está orientado a un uso administrativo y público controlado, integr
 ## 📁 Almacenamiento de imágenes
 
 Las imágenes se almacenan en:
-storage/app/public
+`storage/app/public`
 
 Y se exponen mediante el enlace simbólico:
-/public/storage
+`/public/storage`
 
 Es obligatorio ejecutar:
 
 ```bash
 php artisan storage:link
+
 ```
 
 ---
